@@ -62,7 +62,7 @@ Django REST Framework milik modul tersebut.
 
 ## Desain Figma
 
-_Tautan menyusul sebelum Checkpoint 1._
+https://www.figma.com/design/pe8sMgak0HFt6aJ8HDKDDI/Untitled?node-id=0-1&t=gtbSmqaM9Dz7bjkh-1
 
 ## Tautan APK
 
