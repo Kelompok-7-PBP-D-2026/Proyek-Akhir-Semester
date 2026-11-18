@@ -7,7 +7,8 @@ library;
 
 class ApiConfig {
   /// Domain deployment Django PTS di PWS.
-  static const String baseUrl = 'https://<domain-pts>-pws.cs.ui.ac.id';
+  static const String baseUrl =
+      'https://immanuel-marvin-pts-surplus.pws.cs.ui.ac.id';
 
   /// Base URL untuk development lokal (emulator Android).
   static const String localUrl = 'http://10.0.2.2:8000';
