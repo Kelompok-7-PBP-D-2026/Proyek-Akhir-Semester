@@ -141,13 +141,13 @@ class ClaimService {
     return _paged(data, Claim.fromJson);
   }
 
-  /// GET /klaim/api/claim/<id>/ : detail, timeline, dan koordinat venue.
+  /// `GET /klaim/api/claim/<id>/` : detail, timeline, dan koordinat venue.
   Future<Claim> fetchClaim(int id) async {
     final data = await _send('GET', _uri('/klaim/api/claim/$id/'));
     return Claim.fromJson(_asMap(data));
   }
 
-  /// GET /klaim/api/claim/form/<donationId>/ : stok, batas, slot, atau alasan ditolak.
+  /// `GET /klaim/api/claim/form/<donationId>/` : stok, batas, slot, atau alasan ditolak.
   Future<ClaimFormInfo> fetchFormInfo(int donationId) async {
     final data = await _send('GET', _uri('/klaim/api/claim/form/$donationId/'));
     return ClaimFormInfo.fromJson(_asMap(data));
@@ -173,7 +173,7 @@ class ClaimService {
     return Claim.fromJson(_asMap(data));
   }
 
-  /// POST /klaim/api/claim/<id>/cancel/
+  /// `POST /klaim/api/claim/<id>/cancel/`
   Future<Claim> cancelClaim(int id) async {
     final data = await _send('POST', _uri('/klaim/api/claim/$id/cancel/'));
     return Claim.fromJson(_asMap(data));
@@ -202,7 +202,7 @@ class ClaimService {
     return ClaimStats.fromJson(_asMap(data));
   }
 
-  /// POST /klaim/api/incoming/<id>/verify/ : mengembalikan pesan sukses dari server.
+  /// `POST /klaim/api/incoming/<id>/verify/` : mengembalikan pesan sukses dari server.
   Future<String> verifyCode(int id, String code) async {
     final data = await _send(
       'POST',
